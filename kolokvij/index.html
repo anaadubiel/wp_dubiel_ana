@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ana Dubiel">
+    <title>Moja web stranica</title>
+</head>
+<body>
+    <h1>Dobrodošli na moju web stranicu</h1>
+    <p>Ovo je prvi paragraf na mojoj web stranici</p>
+    <p>Ovo je <em>moj drugi</em> <strong>paragraf</strong></p>
+    <!-- Liste -->
+    <p>stvari oko mene:</p>
+    <ul type="square">
+        <li>računalo</li>
+        <li>učionica</li>
+        <li>utičnica</li>
+        <li>miš</li>
+    </ul>
+    <p>Osobe oko mene:</p>
+    <ol type="1">
+        <li>Lucija</li>
+        <li>Tea</li>
+        <li>Sara</li>
+        <li>Sandra</li>
+    </ol>
+
+    <!-- Slike ili img element -->
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Domestic_cat_cropped.jpg/640px-Domestic_cat_cropped.jpg" alt="macka" height="400">
+   <br>
+   <a href="https://www.unisb.hr/" target="_blank" src="https://www.unisb.hr/" >Kliknite uvdje</a>
+   <br>
+   <a href="https://bs.wikipedia.org/wiki/Ma%C4%8Dka" target="_blank" src="https://bs.wikipedia.org/wiki/Ma%C4%8Dka" >Novi link</a>
+   <br>
+    <!-- tablice -->
+    <h3>Tablice u HTMLu</h3>
+    <table border="1">
+        <tr>
+            <th colspan="6">Time table</th>
+        </tr>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <td>mon</td>
+            <td>tue</td>
+            <td>wed</td>
+            <td>thu</td>
+            <td>fri</td>
+        </tr>
+        <tr>
+            <td colspan="2">maths</td>
+            <td>science</td>
+            <td>maths</td>
+            <td>arts</td>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+            <td>arts</td>
+        </tr>
+        <tr>
+            <td colspan="5"> LUNCH </td>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td colspan="2">science</td>
+            <td colspan="2" rowspan="2">project</td>
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+        </tr>
+       
+    </table>
+
+    <!-- HRML forme -->
+ <h3> forme u HTML-u</h3>
+ <form action=""method="post">
+    <label for="name">Korisničko ime</label>
+    <input type="text" id="name" name="name"> <br>
+    <label for="">unos šifre</label>
+    <input type="password" name="" id=""> <br>
+    <label for="">unos email adrese</label>
+    <input type="email" required name="" id=""> <br>
+    <label>Najdraže voće:</label> <br>
+    <input type="radio" name="voće" id="jabuka" value="jabuka">
+    <label for="jabuka">jabuka</label> <br>
+    <input type="radio" name="voće" id="kruška" value="kruška">
+    <label for="kruška">kruška</label> <br>
+    <input type="radio" name="voće" id="jagoda" value="jagoda">
+    <label for="jagoda">jagoda</label> <br>
+ </form>
+ <input type="submit" value="submit">
+ <input type="reset" value="reset">
+
+
+       
+    
+    
+</body>
+</html>
