@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #e4579d;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recipe {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe h2 {
+            color: #333;
+            margin-top: 0.5em;
+        }
+        .recipe p {
+            color: #555;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);
+            gap: 10px;
+            margin-top: 2em;
+        }
+
+        .item-a {
+            grid-column: span 12;
+            background-color: #eea575;
+            padding: 1em;
+            text-align: center;
+        }
+        .item-b {
+            grid-column: span 8;
+            background-color: #85abe4;
+            padding: 1em;
+        }
+        .item-c {
+            grid-column: span 4;
+            background-color: #fff8e1;
+            padding: 1em;
+        }
+
+        @media (max-width: 480px) {
+            .recipes {
+                flex-direction: column;
+            }
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .item-a, .item-b, .item-c {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moji Recepti</h1>
+    </header>
+
+    <div class="container">
+        <div class="recipes">
+            <div class="recipe">
+                <img src="https://finirecepti.net.hr/wp-content/uploads/2015/02/Sarma.jpg" alt="Sarma">
+                <h2>Sarma</h2>
+                <p>Ukusna domaća sarma, omotana kiselim kupusom.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykjo4eaa1aGM1SZeFygcUJI9yiWMe3IWv9Q&s" alt="Pohano meso">
+                <h2>Pohano meso</h2>
+                <p>Sočno meso obloženo krušnim mrvicama i prženo u ulju.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://familywelcome.hr/wp-content/uploads/2024/06/web-1.jpg" alt="Pecivo s hrenovkom">
+                <h2>Pecivo s hrenovkom</h2>
+                <p>Hrenovka obloženo tijestom.</p>
+            </div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="item-a"><em>Dobrodošli u svijet ukusnih recepata koji će obogatiti vašu kuhinju!</em></div>
+            <div class="item-b">Želite naučiti tajne vrhunskih kuhara? Pogledajte naše savjete o tehnikama pripreme, odabiru sastojaka i stilizaciji jela kako biste svaki obrok učinili posebnim.</div>
+            <div class="item-c"><strong>Savjet dana:</strong> Čekajte da se hrana ohladi, pa tek onda kušajte.</div>
+        </div>
+    </div>
+</body>
+</html>
