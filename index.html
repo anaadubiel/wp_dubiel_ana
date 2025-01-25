@@ -1,302 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ana Dubiel">
-    <title>Ana Dubiel</title>
+    <title>Osobna stranica Ane Dubiel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #632c4c;
+        }
+        header {
+            background-color: #c47aab;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #eec2ec;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .zadace {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .zadaca {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            background: #fff;
+            text-align: center;
+        }
+        .zadaca img {
+            max-width: 100%;
+            height: auto;
+        }
+        .zadaca a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Naslovi -->
-    <h1>Osobna web stranica</h1>
-    <h1>Naslov 1</h1>
-    <h2>Naslov 2</h2>
-    <h3>Naslov 3</h3>
-    <h4>Naslov 4</h4>
-    <h5>Naslov 5</h5>
-    <h6>Naslov 6</h6>
-
-    <!-- Paragrafi -->
-    <p>Ovo je prvi sat <br> web programiranja.</p>
-    <p>Sljedeći će biti drugi.</p>
-
-    <hr>
-
-    <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Nullam at massa quis orci commodo rutrum.
-     Vestibulum facilisis quis elit gravida dapibus. <em>Proin dignissim,</em>  lacus non dictum volutpat,
-    lectus tellus vestibulum urna, <i>quis feugiat</i> ante libero tincidunt tellus. Suspendisse dignissim 
-    tincidunt orci, non ultrices urna semper vitae. Praesent non ante ut tortor malesuada porta eget non nulla. 
-    Nunc ultrices enim in vestibulum euismod. Sed in nisi mauris. Fusce sodales sagittis imperdiet. 
-    Phasellus metus mauris, pharetra ut pellentesque nec, rutrum a nisl. Vestibulum non justo tincidunt
-    eros gravida lobortis a quis urna. Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Vestibulum in finibus est. Aenean nec facilisis metus. Aliquam egestas arcu
-    at orci tincidunt, nec cursus nisl maximus. Quisque eu sapien enim. </p>
-
-    <!-- Liste -->
-    <p>Dani u tjednu:</p>
-    <ul type="square">
-        <li>pon</li>
-        <li>uto</li>
-        <li>sri</li>
-    </ul>
-
-    <p>Kolegiji</p>
-    <ol type="a">
-        <li>Web programiranje</li>
-        <li>Metodika</li>
-        <li>Hrvatski</li>
-        <li>Psihologija</li>
-    </ol>
-
-    <dl>
-        <dt>Struja</dt>
-        <dd>usmjereno gibanje elektrona kroz vodič</dd>
-        <dt>Napon</dt>
-        <dd>Razlika potencijala</dd>
-    </dl>
-
-    <hr>
-    <h1>The Best Movies According to Angela</h1>
-    <h2>My top 3 movies of all-time</h2>
-    <hr>
-    <h3>Spirited Away</h3>
-    <p>This is my favorite anime. I love the beautidul images.</p>
-    <h3>Ex Machina</h3>
-    <p>Really cool sci-fi movie.</p>
-    <h3>Drive</h3>
-    <p>Super beautiful film. Really artistic</p>
-
-   <!-- Slike ili img element -->
-   <h3>Ubacivanje slika s web stranice</h3>
-    <img src="https://www.unisb.hr/wp-content/uploads/design/banner_logo.png" width="450" alt="logo">
-    <!-- anchor element ili a element -->
-    <h3>linkovi</h3>
-   <a href="https://www.unisb.hr/" target="_blank"><img src="https://www.unisb.hr/wp-content/uploads/design/banner_logo.png" width="450" alt="logo"></a>
-
-   
-   <br>
-   <a href="linkovi/link1.html">link1</a>
-   <br>
-   <a href="linkovi/link2.html">link2</a>
-    
-    <br>
-    
-    <!-- tablice -->
-     <h3>Tablice u HTMLu</h3>
-     <table border="1">
-        <tr>
-            <th>ponedjeljak</th>
-            <th>utorak</th>
-            <th>srijeda</th>
-        </tr>
-        <tr>
-            <td>HJ</td>
-            <td>MAT</td>
-            <td>TZK</td>
-        </tr>
-        <tr>
-            <td>ENG</td>
-            <td>HJ</td>
-            <td>PID</td>
-        </tr>
-        
-     </table>
-
-     <br>
-
-     <table border="1">
-        <tr>
-            <th colspan="2">NAME</th>
-            <th>LOREM</th>
-        </tr>
-        <tr>
-           <td>lorem</td>
-           <td>lorem</td>
-           <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-
-     </table>
-      
-     <br>
-     <table border="1">
-        <tr>
-            <td rowspan="3">APRIL</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-     </table>
-     
-     <br>
-
-     <table border="1">
-        <tr>
-            <th>No.</th>
-            <th>Full Name</th>
-            <th>Position</th>
-            <th>Salary</th>
-            <th>Type</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <td>Bill Gates</td>
-            <td>Founder Microsoft</td>
-            <td>$1000</td>
-            <td rowspan="4">Company Founder</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>Steve Jobs</td>
-            <td>Founder Apple</td>
-            <td>$1200</td>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td>Lary Page</td>
-            <td>Founder Google</td>
-            <td>$1100</td>
-        </tr>
-        <tr>
-            <th>4</th>
-            <td>Mark Zuckeberg</td>
-            <td>Founder Facebook</td>
-            <td>$1300</td>
-        </tr>
-       
-     </table>
-<br>
-<table border="1">
-    <tr>
-        <th colspan="3">2022</th>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td colspan="2" rowspan="2"> FIESTA</td>
-        <td>lorem</td>
-
-    </tr>
-    <tr>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    
-</table>
-
-<br>
-
-<!-- HRML forme -->
- <h3> HTML forme </h3>
- <form action="" method="get">
-    <label for="name">Unesi svoje ime</label>
-    <input type="text" id="name" name="name"> <br>
-    <label for="prezime">Unesi svoje prezime</label>
-    <input type="text" name="prezime" id="prezime" placeholder="unesi prezime..." maxlength="20" size="25"> <br>
-    <label for="">unesi password</label>
-    <input type="password" name="" id=""> <br>
-    <label for="">Izaberi boju</label>
-    <input type="color" name="" id=""> <br>
-    <label for="">unesi datum</label>
-    <input type="date" name="" id=""> <br>
-    <label for="">unesi email</label>
-    <input type="email" required name="" id=""> <br>
-    <label for="">unesi tel</label>
-    <input type="tel" name="" id=""> <br>
-    <label>Izaberi najbolji kolegij:</label> <br>
-    <input type="radio" name="kolegij" id="matematika" value="matematika">
-    <label for="matematika">Matematika</label> <br>
-    <input type="radio" name="kolegij" id="web programiranje" value="web programiranje">
-    <label for="web programiranje">Web programiranje</label> <br>
-    <input type="radio" name="kolegij" id="hrvatski" value="hrvatski">
-    <label for="hrvatski">Hrvatski</label> <br>
-    <label> Najdraže boje</label> <br>
-    <input type="checkbox" name="boja 1" id="boja 1">
-    <label for="boja 1">Crvena</label> <br>
-    <input type="checkbox" name="boja 2" id="boja2">
-    <label for="boja 2"> Zelena</label> <br>
-    <input type="checkbox" name="boja 3" id="boja3">
-    <label for="boja 3"> Plava</label> <br>
-    <input type="checkbox" name="boja 4" id="boja 4">
-    <label for="boja 4"> Ljubičasta</label> <br>
-    <br>
-    <input type="submit" value="pošalji"> <br>
-    
- </form>
- <h3>Registration form</h3>
- <form action="" method="post">
-    <label for="name">First name:</label>
-    <input type="text" name="name" id="name"> <br>
-    <label for="surname">Last Name:</label>
-    <input type="text" name="surname" id="surname"> <br>
-     <label for="nickname">Nick name:</label>
-    <input type="text" name="nickname" id="nickname"> <br>
-    <label for="">Email:</label>
-    <input type="email" name="" id=""> <br>
-    <label for="">Password:</label>
-    <input type="password" name="" id=""> <br>
-    <label for="">Date of birth:</label>
-    <input type="date" name="" id=""> <br>
-    <label for="">Gender:</label> 
-    <input type="radio" name="male" id="male">
-    <label for="male">Male</label> 
-    <input type="radio" name="female" id="female">
-    <label for="female">Female</label> 
-    <input type="radio" name="others" id="others">
-    <label for="others">Others</label> <br>
-    <label for="">Mobile:</label> 
-    <input type="tel" name="" id=""> <br>
-    <label for="adress">Adress:</label>
-
-        <textarea id="adress" name="adress" rows="4" cols="50">
-        </textarea> <br>
-        <input type="submit" value="submit">
-        <input type="reset" value="reset">
-    
- </form>
-<br>
-
-
-
-
-
+    <header>
+        <h1>Osobna stranica Ane Dubiel</h1>
+    </header>
+    <nav>
+        <a href="#o-meni">O meni</a>
+        <a href="#zadace">Zadaće</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="container" id="o-meni">
+        <h2>O meni</h2>
+        <p>Moje ime je Ana Dubiel, studentica sam Učiteljskog studija u Slavonskom Brodu. Imam 21 godinu, a u slobodno vrijeme volim čitati knjige.</p>
+    </div>
+    <div class="container" id="zadace">
+        <h2>Moje zadaće</h2>
+        <div class="zadace">
+            <div class="zadaca">
+                <img src="https://image.dnevnik.hr/media/images/1920x1080/Jan2025/62993319-tiramsu-se-moze-napraviti-i-bez-jaja-i-slatkog-sira.jpg" alt="Zadaća 1">
+                <h3>Zadaća 1</h3>
+                <p>Tiramisu</p>
+                <a href="zadace\zadaca1.html">Saznaj više</a>
+            </div>
+            <div class="zadaca">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbNENOvailTcm3EwvQjJk_ASS8-dphCW9yQ&s" alt="Zadaća 2">
+                <h3>Zadaća 2</h3>
+                <p>Raspored sati</p>
+                <a href="zadace\zadaca2.html">Saznaj više</a>
+            </div>
+            <div class="zadaca">
+                <img src="https://www.novilist.hr/wp-content/uploads/2021/11/knfxcwp8bro9gqm84uxm7ej8wks.jpg" alt="Zadaća 3">
+                <h3>Zadaća 3</h3>
+                <p>Ježeva kućica</p>
+                <a href="zadace\zadaca3.html">Saznaj više</a>
+            </div>
+            <div class="zadaca">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfqcvdaKrmrcZc_DsQl8u4xfN6FKhHyugpg&s" alt="Zadaća 4">
+                <h3>Zadaća 4</h3>
+                <p>Požega</p>
+                <a href="zadace\zadaca4.html">Saznaj više</a>
+            </div>
+            <div class="zadaca">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKujztNC9vwGxncxFXKiitKdAsD3aQLZko8A&s" alt="Zadaća 5">
+                <h3>Zadaća 5</h3>
+                <p>Požega</p>
+                <a href="zadace\zadaca5.html">Saznaj više</a>
+            </div>
+            <div class="zadaca">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVqoj9Pkf1XHBuadK8S8Md22T8GVxw2kJFA&s" alt="Zadaća 6">
+                <h3>Zadaća 6</h3>
+                <p>Je li broj veći ili manji od 10</p>
+                <a href="zadace\zadaca6.html">Saznaj više</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container" id="kontakt">
+        <h2>Kontaktiraj me</h2>
+        <form action="mailto:vaša.email@domena.com" method="post" enctype="text/plain">
+            <input type="text" name="ime" placeholder="Ime" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="poruka" rows="5" placeholder="Poruka" required></textarea>
+            <button type="submit">Pošaljite poruku</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ana Dubiel | Sva prava zadržana</p>
+    </footer>
 </body>
-</html> 
+</html>
